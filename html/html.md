@@ -43,12 +43,15 @@
 
 
 
+column0
+-------
+-------
 # CSE 
 - Section H
-    - Student 1
-    - Student 2
+ | - Student 1
+ | - Student 2
 
 - Section I
-    - Student 1
-    - Student 2
+ | - Student 1
+ | - Student 2
 
