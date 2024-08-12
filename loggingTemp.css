@@ -1,0 +1,61 @@
+* {
+    text-align: center;
+    align-items: center;
+}
+
+
+body::before {
+    --_line-size: 0.5px;
+    --_line-color: #fff;
+    --_bg-size: 1.5rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        var(--_line-color) var(--_line-size),
+        transparent var(--_line-size),
+        transparent calc(100% - var(--_line-size)),
+        var(--_line-color) calc(100% - var(--_line-size))
+    ),}
+
+body {
+    background: linear-gradient(rgb(202, 202, 243), rgb(5, 5, 116));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    
+}
+
+.parent {
+    text-align: center;
+    align-content: center;
+}
+button {
+    border: 1px solid grey;
+    border-radius: 0rem 0.5rem;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+}
+
+
+li {
+    text-align: left;
+    
+}
+
+button:hover {
+    background-color: linear-gradient;
+}
+
+

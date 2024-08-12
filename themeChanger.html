@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="themeChanger.css">
+</head>
+<body class="light">
+    <div class="parent">
+        <h1>Theme</h1>
+        <h3>Revel Clue</h3>
+        <button id="btn"><img src="./themeChanger.png" alt="Change Theme"></button>
+    </div>
+
+    <script>
+    let btn = document.querySelector("#btn");
+    let body = document.querySelector("body");
+    let currMode = "light";
+
+    btn.addEventListener("click", () => {
+        if (currMode === "light") {
+            currMode = "dark";
+            body.classList.add("dark");
+            body.classList.remove("light");
+        } else {
+            currMode = "light";
+            body.classList.add("light");
+            body.classList.remove("dark");
+        }
+        console.log(currMode);
+    });
+    </script>
+</body>
+</html>

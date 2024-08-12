@@ -1,0 +1,29 @@
+.parent {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    margin: 10px;
+    border: 1px solid red;
+    width: 1000px;
+    height:800px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.parent1 {
+    margin: 20px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.parent2 {
+    margin: 20px;
+    padding: 20px;
+}
+
+img {
+    border: 1px solid gray;
+    height: 100px;
+    width: 100px;
+    
+}

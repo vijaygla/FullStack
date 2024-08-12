@@ -1,0 +1,40 @@
+
+[target="_blank"]::after{
+    content: "";
+    display: inline-block;
+    color: blue;
+    width: 10px;
+    height: 10px;
+    background: url(./newtab.png); 
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin: auto 5px;
+    border-radius: 2px solid black;
+
+}
+[target="_blank"]::after{
+    content: "";
+    display: inline-block;
+    color: blue;
+    width: 10px;
+    height: 10px;
+    background: url(./newtab.png); 
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin: auto 5px;
+    border-radius: 2px solid black;
+
+}
+
+
+
+button {
+    margin-top: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 200px;
+    padding-left: 200px;
+    background-color: aquamarine;
+}
