@@ -19,3 +19,5 @@ const userName  =  [
 console.log(userName[5]);
 console.log(userName[5].key1);
 
+
+// Json object
