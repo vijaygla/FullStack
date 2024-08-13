@@ -1,0 +1,22 @@
+.child1 img {
+    color: red;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 250px;
+    margin-left: 800px;
+    height: 100px;
+    width: auto;
+}
+
+.search {
+    background-color: white;
+    border: 1px solid gray;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    height: 30px;
+    margin-left: 850px;
+}
+
