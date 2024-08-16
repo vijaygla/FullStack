@@ -15,14 +15,16 @@
 
 ***Bold Italic***
 
+-------UnOrder List------
 - list item 
     - item 1
     - item 2
 - list item 
+    - item 1
+    - item 2
 
 
-
-
+-------Order List -------
 1. List Item 1
 2. List Item 2 
     - List Item 1 
@@ -76,9 +78,35 @@
 9. sup - use to write the super script 
 
 
+# **CSS**->Cascading Style sheet
+- Some important Properties and their value which can apply on any selector 
+    - text-align: center;
+    - text-decoration: underline;
+    - text-transform: capitalize;
+    - height: 100px;
+    - text-align: center;
+    - width: 10px;
+    - background-color: violet;
+    - color: green;
+    - border-width: 5px;
+    - border-color: turquoise;
+    - border-style: solid;
+    - line-height: 100px;
+    - color: red;
+    - background-color: blue;
+    - border-width: 100px;
+    - text-decoration: red underline;
+    - text-transform: uppercase;
+    - font-weight: 900;
+    - text-align: center;
+    - text-align: start;
+    - font-size:10px;
 
-****
-
+- Selector 
+    - Id selector 
+    - class selector 
+    - tag selector 
+    
 
 # Responsive Website
 
@@ -94,7 +122,7 @@ line 3 of code
 
 
 
-# JS
+# **JS** --> Java Script
 
 
 ## Naming Coverntion 
@@ -141,4 +169,19 @@ line 3 of code
     - if (-3.14)
     - if (Infinity)
     - if (-Infinity)
+
+
+## To take input as image
+- <label for="profile_pic">Profile Picture</label>
+- <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+
+
+
+
+
+# **React JS**
+
+- Why React is introduce ?
+    - React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
+    - React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.
 

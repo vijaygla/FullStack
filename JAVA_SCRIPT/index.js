@@ -1,12 +1,3 @@
-const amount = 20;
-console.log("🚀 ~ amount:", amount);
-
-
-const ans = true;
-console.log("🚀 ~ ans:", ans)
-
-
-
 const userName  =  [
     "user101",
     "user102",
@@ -19,5 +10,6 @@ const userName  =  [
 console.log(userName[5]);
 console.log(userName[5].key1);
 
-
-// Json object
+console.warn(" %c This is warning", "color:yellow; border:1px solid black");
+console.log(alert("%cThis is alert","color:red"));
+window.alert("This is window alert");

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons</title>
+        <link rel="stylesheet" href="ButtonPage.css">
+    </head>
+    <body style="background: linear-gradient(rgb(148, 148, 240),rgb(0, 0, 47)); ">
+        <div style="max-width: 550px; margin: auto; height: 900px; align-items: flex-star;">
+            <h1>Logging messages</h1>
+            <p>Open the console to see the messages</p>
+            <button id="button">Log messages</button>
+            <script>
+                const button = document.querySelector("button");
+                button.addEventListener("click",() => {
+                    const group = [{"groupName":"Group 1", "groupStatus":"active"},
+                {"groupName":"Group 2","groupStatus":"removed"}]
+                console.table(group);
+                })
+            </script>
+            <button>Warn message</button>
+            <button>Error Message</button>
+            <button>Info Message</button>
+            <br>
+            <button>Clear Console</button>
+            <button>Assert</button>
+            <button>Table</button>
+            <button>Group</button>
+            <Button>Custom Style</Button>
+            <br>
+            <button>Cause 404 Error</button>
+            <button>Cause Error</button>
+            <button>Cause Victation</button>
+            <p style="text-align: left;">To open the console:</p>
+            <ul>
+                <li>line 1</li>
+                <li>line 2</li>
+                <li>line 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

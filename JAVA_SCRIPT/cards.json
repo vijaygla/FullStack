@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "card1",
+        "title": "What Comes After A.I.",
+        "description": "The next startup frontier    rebuilds reality. Prepare for Deep Tech",
+        "authorName": "connor beem",
+        "cardImageUrl": "https://miro.medium.com/v2/ resize:fit:828/format:webp/  1*T5UYhLFX7bTUXq_EKn0YOw.jpeg",
+        "authorImageUrl": "https://medium.com/@cbeem1?   source=explore---------0-109--------------------2  9306f6c_e42b_47ea_b1b1_454ad3904a75-------15",
+        "date": "Aug 6, 2024",
+        "likes": 250,
+        "comments": 25,
+        "status": "actice"
+    },
+    {
+        "_id": "card2",
+        "title": "Figma is not forever.",
+        "description": "And inVision is now gone.",
+        "authorName": "Michal Malewicz",
+        "cardImageUrl": "https://miro.medium.com/v2/ resize:fit:1100/format:webp/ 1*mOJOOses-Yp7qnrMFa0FIA.png",
+        "authorImageUrl": "https://medium.com/   @michalmalewicz?   source=post_page-----cb8c103f64eb----------------  ----------------",
+        "date": "an 7, 2024",
+        "likes": 369,
+        "comments": 147,
+        "status": "actice"
+    }
+]
+

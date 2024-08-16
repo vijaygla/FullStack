@@ -1,0 +1,13 @@
+caption {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+}
+
+.parent {
+    color: #f3238f;
+    background-color: #141112;
+    display: inline;
+    
+}

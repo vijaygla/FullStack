@@ -77,8 +77,19 @@ const resume =
 const degree = resume.Qualification[0].degree;
 const college = resume.Qualification[0].institution;
 const dob = resume.dob;
+const primaryNumber = resume["Contact-Detail"][0];
+const secondaryNumber = resume["Contact-Detail"][1];
 
 console.log(resume);
 console.log(`Degree Of Qualification: ${degree}`);
 console.log("My College is:", college);
 console.log("DOB:", dob);
+console.log("🚀 ~ secondaryNumber:", secondaryNumber)
+console.log("🚀 ~ primaryNumber:", primaryNumber)
+
+
+
+const resumePreTag = document.querySelector("#resume");
+console.log(resumePreTag.innerHTML = JSON.stringify(resume, null, 2));
+
+
