@@ -246,4 +246,7 @@ line 3 of code
 |
 |
 |
-|
+
+
+**Destructurnig**
+- Destruct the 
