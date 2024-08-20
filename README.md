@@ -115,6 +115,7 @@
 This is my first line of code in the sample file.
 
 Line 2 of code 
+<<<<<<< HEAD
 line 3 of code 
 
 
@@ -250,3 +251,7 @@ line 3 of code
 
 **Destructurnig**
 - Destruct the 
+=======
+line 3 of code
+change the repo name
+>>>>>>> a1dbd178e2909ae382aa48041f1c5ce0a69ecf8f
