@@ -185,3 +185,65 @@ line 3 of code
     - React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
     - React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.
 
+
+
+## Error in React
+
+## Error in React
+- [plugin:vite:import-analysis] Failed to resolve import "./App.jsx" from "src/main.jsx". Does the file exist?
+    - Failed to resolve import “./App.jsx” and “./Sample.jsx”:
+
+
+
+- [plugin:vite:import-analysis] Failed to resolve import "./Sample.jsx" from "src/main.jsx". Does the file exist?
+ <u>class Name</u>: Strict Mode
+    - Ensure that the files App.jsx and Sample.jsx exist in the src directory.
+    - Check for any typos in the file names or import statements.
+
+- [plugin:vite:react-babel] D:\GLA\REACT_JS\src\main.jsx: Unterminated JSX contents. (9:15)
+    - This error usually occurs when there is an unclosed JSX tag. Double-check your JSX code in main.jsx around line 9 to ensure all tags are properly closed.
+
+- [plugin:vite:react-babel] D:\GLA\REACT_JS\src\main.jsx: Unexpected token (10:0)
+    - This error might be related to the unterminated JSX contents. Fixing the JSX syntax error should resolve this issue as well.
+
+
+
+
+## React Basic Error with initial file
+- Import Resolution Errors:
+    - The system is unable to resolve the imports for ./App.jsx and ./Sample.jsx from src/main.jsx. This usually means that the files App.jsx and Sample.jsx might not exist in the specified path.
+- Strict Mode Class Name:
+    - There’s a mention of “Strict Mode” in your class name, but it doesn’t seem to be directly related to the errors.
+- JSX Syntax Errors:
+    - There are syntax errors in your main.jsx file:
+- Unterminated JSX contents at line 9, column 15.
+- Unexpected token at line 10, column 0.
+
+
+
+- # case 1
+
+1. Export default with any name and default import any name -> No error
+25
+2. Export named with any name and named import any name -> Error
+26
+3. In a file, only one default export is possible, same only one default import is possible
+27
+28
+4. In a file, multiple named exports are possible, same multiple named imports are possible 5. named export two ways:
+
+    a. export const XXXX = () => {}
+    b. const XXXX = () => {}; export { XXXX }
+
+
+# Functional Component VS Normal Function 
+
+|Functional Component   |  Normal Function  |
+|-----------------------|-------------------|
+|
+|
+|
+|
+|
+|
+|

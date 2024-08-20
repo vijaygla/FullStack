@@ -1,0 +1,65 @@
+/* div{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    color: pink;
+}
+
+
+div:hover {
+    text-transform: capitalize;
+    cursor: pointer;
+    color: gray;
+    background-color: pink;
+    transition: all 5s ease 1s;
+    font-size: large;
+    /* transform: rotate(45deg); */
+    /* transform:scalex(3); */
+    /* transform: translatex(300px); */
+    transform: skew(45deg);
+    
+} */
+
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+
+
+div{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    color: pink;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: myName;
+    animation-duration: 9s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+@keyframes myName {
+    0% {
+        left: 0px;
+        background-color: yellow;
+    }
+    50% {
+        background-color:pink;
+    }
+    100% {
+        right: 500px;
+        background-color:red;
+    }
+}
