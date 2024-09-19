@@ -265,12 +265,24 @@ line 3 of code
     - py -3 -m venv .venv
     - .venv\Scripts\activate
     - pip install Flask
-    - flask --app fileName run --debug
+    - flask --app fileName.extention run --debug
 2. To again run after delete terminal
     - .venv\Scripts\activate
-    - flask --app fileName run --debug
+    - flask --app fileName.extention run --debug
+
+# Flask set up 
+> mkdir myproject
+> cd myproject
+> py -3 -m venv .venv
+
+> .venv\Scripts\activate
+$ pip install Flask
 
 
 
+3. Installation of Mongo db 
+    - pip install pymongo
+    - pip freeze >requirement.txt
+    - flask --app fileName.extention run
 
 

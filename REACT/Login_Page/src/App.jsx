@@ -1,7 +1,8 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {Navbar} from './Component/Navbar';
-import {LoginForm} from './Component/LoginForm';
+import { Navbar } from './Component/Navbar';
+import { LoginForm } from './Component/LoginForm';
+import "./App.Module.css";
+
 
 const App = () => {
   return (
@@ -9,7 +10,6 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/login" element={<LoginForm />} />
-        {/* Add other routes here */}
       </Routes>
       <LoginForm></LoginForm>
     </Router>
@@ -17,4 +17,3 @@ const App = () => {
 };
 
 export default App;
-
