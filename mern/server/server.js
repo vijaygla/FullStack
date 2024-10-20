@@ -1,6 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const router = require("./router/auth-router");
+const connectDb = require("./utils/db");
+
 
 // middle ware--> use to take json data from server in proper manner use middle ware
 app.use(express.json());
@@ -28,9 +31,13 @@ app.use(express.json());
 app.use("/api/auth", router);
 
 const port = 5000;
-app.listen(port, () => {
-    console.log(`server is running at port ${port}`);
-})
+
+connectDb().then(() => {
+    app.listen(port, () => {
+        console.log(`server is running at port ${port}`);
+    })
+});
+
 
 
 // To check the output in browser
