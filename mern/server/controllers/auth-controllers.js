@@ -24,23 +24,59 @@ const register = async (req, res) => {
             return res.status(400).json({ msg: "email already exist" });
         }
 
-        // hash the password
-        const saltRound = 10;
-        const hashPassword = await bcrypt.hash(password, saltRound);
-
         const userCreated = await users.create({
             username,
             email,
             phone,
-            password: hashPassword,
+            password,
         });
 
-        res.status(200).json({message: userCreated});
+        res.status(201).json({
+            message: userCreated,
+            msg: "Registration successfull",
+            token: await userCreated.generateToken(),
+            userId: userCreated._id.toString(),
+        });
     }
     catch (error) {
         res.status(500).json({ msg: "internal server error" });
     }
 }
 
-module.exports = { home, register };
 
+
+
+// Login page
+const login = async (req, res) => {
+    try {
+        const { email, password } = req.body;
+
+        const userExit = await users.findOne({ email });
+        console.log(userExit);
+
+        if (!userExit) {
+            return res.status(400).json({ message: "Invalid Credential" });
+        }
+
+        // const user = await bcrypt.compare(password, userExit.password);
+        const user = await userExit.comparePassword(password);
+
+
+        if (user) {
+            res.status(200).json({
+                msg: "Login Successful",
+                token: await userExit.generateToken(),
+                userId: userExit._id.toString(),
+            });
+        }
+        else {
+            res.status(401).json({ message: "Invalid email or password" })
+        }
+    }
+    catch (error) {
+        res.status(500).json("Internal Server Error");
+    }
+}
+
+
+module.exports = { home, register, login};

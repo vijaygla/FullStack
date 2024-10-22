@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const router = require("./router/auth-router");
 const connectDb = require("./utils/db");
+const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken');
 
 
 // middle ware--> use to take json data from server in proper manner use middle ware
