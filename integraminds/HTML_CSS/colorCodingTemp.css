@@ -1,0 +1,40 @@
+h1 {
+    color: #f313a1;
+}
+
+.parent {
+    background-color: #a4290019;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 200px;
+    width: 40%;
+    background-color: aquamarine;
+    margin: 2%;
+}
+
+.para {
+    width: 50%;
+}
+
+#b1:hover {
+    background-color: aqua;
+}
+#b2:hover {
+    background-color: brown;
+}
+#b3:hover {
+    background-color: blue;
+}
+#b4:hover {
+    background-color: red;
+}
+#b5:hover {
+    background-color: pink;
+}
+
