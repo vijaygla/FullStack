@@ -6,3 +6,5 @@ const res = validator.isEmail("Vijay@gmail.com");
 console.log(res ? chalk.green.inverse(res) : chalk.red.inverse(res));
 
 console.log(chalk.cyanBright.inverse("Hello World"));
+
+

@@ -1,10 +1,12 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-    res.end("Hello from server side");
+    res.end("Hello Vijay Kumar from server side");
 });
 
-server.listen(8000, "127.0.0.1", () => {
-    console.log("Listen to the ports");
+const port = 9000;
+
+server.listen(port, () => {
+    console.log(`Server is running at port ${port}`);
 });
 

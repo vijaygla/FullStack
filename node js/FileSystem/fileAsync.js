@@ -1,36 +1,37 @@
 const fs = require("fs");
 
-// // create file and write somethings in this file
-fs.writeFile("read.txt","Hello This is the Read file of Asyncronous file System.\n" , (err) => {
-    console.log("file is created");
-    console.log("Error:",err);
-});
-
-
-// append in created file
-fs.appendFile("read.txt","This is from Thappa Technical" , (err) =>{
-    console.log("file is appended");
-    console.log("Error:",err);
-});
-
-
-
-// read the file and rename 
-fs.readFile("read.txt","UTF-8",
-(err , data) => {
-    console.log(data);
-    console.log("Error:",err);
-});
-
-
-
-fs.rename("read.txt","readWriteAsync",
-    // This is call back function
-    (err) => {
-        console.log("File is Renamed");
-        console.log("Error:",err);
+// Create a file and write something in it
+fs.writeFile("file.txt", "Default work in Node.js because it is single-threaded", (err) => {
+    if (err) {
+        console.error("Error creating the file:", err);
+        return;
     }
-);
+    console.log("File is created");
 
+    // Append to the created file
+    fs.appendFile("file.txt", " This is from Thappa Technical", (err) => {
+        if (err) {
+            console.error("Error appending to the file:", err);
+            return;
+        }
+        console.log("File is appended");
 
+        // Read the file
+        fs.readFile("file.txt", "utf8", (err, data) => {
+            if (err) {
+                console.error("Error reading the file:", err);
+                return;
+            }
+            console.log("File content:", data);
 
+            // Rename the file
+            fs.rename("file.txt", "newFileAsync.txt", (err) => {
+                if (err) {
+                    console.error("Error renaming the file:", err);
+                    return;
+                }
+                console.log("File is renamed to 'newFile.txt'");
+            });
+        });
+    });
+});
