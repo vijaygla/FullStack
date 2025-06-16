@@ -1,19 +1,22 @@
-import express from "express";
+const express = require("express");
+const dotenv = require("dotenv");
+const connectDb = require("./utils/db");
 
+dotenv.config();
 const app = express();
+const PORT = process.env.PORT || 8080;
 
-const port = 9000;
+// middlewares
+app.use(express.json());
 
+
+// routes
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.status(201).send("This is home page");
 })
 
-app.get("/about", (req, res) => {
-    res.send("This is my about page");
-})
-
-
-app.listen(port, () => {
-    console.log(`Server is listen at port ${port}`);
+app.listen(PORT, () => {
+    connectDb();
+    console.log(`Server is listing at port ${PORT}`);
 })
 
