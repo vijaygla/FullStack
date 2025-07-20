@@ -1,0 +1,13 @@
+@host = http://localhost:9000;
+
+###
+POST {{host}}/api/v1/register
+Content-Type: application/json
+
+{
+    "email": "pmdhrs@gmail.com",
+    "password": "123456"
+}
+
+###
+GET {{host}}/api/v1/login

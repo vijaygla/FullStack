@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase Converter</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            background-color: green;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Convert Text to Uppercase</h2>
+    <input type="text" id="input" placeholder="Enter some text here..." />
+    <button id="btn">Click Me</button>
+
+    <p id="output"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            const input = document.getElementById("input").value;
+            const output = document.getElementById("output");
+
+            if (input.trim() === "") {
+                output.textContent = "Please enter a valid string.";
+                return;
+            }
+
+            // Convert the input string to uppercase
+            const upperCaseString = input.toUpperCase();
+
+            // Display the result
+            output.textContent = `Uppercase: ${upperCaseString}`;
+        });
+    </script>
+
+</body>
+
+</html>
+

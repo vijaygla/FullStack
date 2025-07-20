@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <ul id="itemList">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <script>
+        // //  using event bobling
+        // const items = document.querySelectorAll('#itemList li');
+
+        // items.forEach(item => {
+        //     item.addEventListener("click", function () {
+        //         console.log("clicked: ", this.textContent);
+        //     })
+        // });
+
+        // Using event delegation
+        const items = document.getElementById('itemList');
+        items.addEventListener("click", function(e) {
+            if(e.target.tagName === 'LI') {
+                console.log("clicked: ", e.target.textContent);
+            }
+        })
+    </script>
+</body>
+</html>
